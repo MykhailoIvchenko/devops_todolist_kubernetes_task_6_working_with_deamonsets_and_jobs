@@ -17,3 +17,4 @@ spec:
           - name: health
             image: busyboxplus:curl
             command: ["curl", "http://todoapp-service.todoapp.svc.cluster.local/api/health"]
+          restartPolicy: OnFailure
